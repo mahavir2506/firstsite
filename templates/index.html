@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working!</title>
+</head>
+<body>
+		<h1> Working!</h1>
+		<form method="POST" action="\users">
+		{% csrf_token %}
+		{{form.as_p}}
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>

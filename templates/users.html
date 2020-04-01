@@ -1,0 +1,13 @@
+<html>
+ {% if user %}
+ 
+    <table style="border:2px solid black;">
+    {% csrf_token %}
+    <tr>
+        <th> UserName </th>
+    </tr>
+    {%for a in user%}
+    <tr><td>{{a.first_name}}</td></tr>
+    {%endfor%}
+    </table>
+ {%endif%}
